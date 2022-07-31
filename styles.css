@@ -1,5 +1,14 @@
 :root{
     --clr-landing-pg-background: #7BC4C4; 
+    --h1-text-color: white;
+
+    /* fonts, size and weight */
+    --main-font-family:'Poppins', sans-serif;
+    --main-font-weight:300;
+
+    --nav-font-size:2rem;
+    --nav-font-weight:2rem;
+    --nav-font-family:'Poppins', sans-serif;
 }
 
 html{
@@ -7,15 +16,21 @@ html{
 }
 
 body{
-    background:var(--clr-landing-pg-background)
+    background:var(--clr-landing-pg-background);
+    font-family: var(--main-font-family);
+    font-weight: var(--main-font-weight)
 }
 
-header{
+nav{
+
+}
+
+nav h1{
     display:flex;
     justify-content: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    color:white;
+    font-family: var(--nav-font-family);
+    font-weight: var(--nav-font-weight);
+    font-size: var(--nav-font-size);
+    color:var( --h1-text-color);
     text-shadow: 1px 3px 1px #0f6868;
 }
